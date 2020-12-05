@@ -1,0 +1,75 @@
+.menu-tabs {
+  position: relative;
+  &__items {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    @media (min-width: 768px) {
+      max-width: 80rem;
+    }
+    .row {
+      @media (min-width: 768px) {
+        @include build-row(3rem);
+      }
+    }
+    .col {
+      @media (min-width: 768px) {
+        @include build-col-gutter(3rem);
+        @include build-col(4, 12);
+      }
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      color: $white;
+      box-shadow: 0 0 15px -1px rgba(255, 255, 255, 0.6);
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: all 0.3s ease;
+      @media (min-width: 768px) {
+        display: block;
+        padding: 2.5rem;
+        margin-bottom: 0;
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.8);
+      }
+
+      &__img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        overflow: hidden;
+        @media (min-width: 768px) {
+          width: 10rem;
+          height: 10rem;
+          margin: 0 auto 3rem;
+        }
+        @media (min-widtdh: 1200px) {
+          width: 13rem;
+          height: 13rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+      &__caption {
+        padding-left: 1.5rem;
+        line-height: 1;
+        @media (min-width: 768px) {
+          padding-left: 0;
+        }
+        h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.nav-to-top {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 2px solid $black-200;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50%;
+  z-index: 10;
+  @media (min-width: 768px) {
+    width: 6rem;
+    height: 6rem;
+  }
+  &:hover {
+    &:after {
+      transform: translate(-50%, -80%);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(-50%, -50%);
+    background: url("../images/icon-chevron-up.svg");
+    transition: all 0.15s ease;
+  }
+}

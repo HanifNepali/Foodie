@@ -1,0 +1,42 @@
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-cover > img {
+  display: none;
+}
+
+.gutter-md-x {
+  padding: 3.5rem 0;
+  @media (min-width: 1200px) {
+    padding: 5rem 0;
+  }
+}
+
+.with-icon {
+  position: relative;
+  padding-left: 3rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+  }
+  &--timer {
+    &::before {
+      background: url("../images/icon-clock.svg");
+      background-size: cover;
+    }
+  }
+  &--servings {
+    &::before {
+      background: url("../images/icon-servings.svg");
+      background-size: cover;
+    }
+  }
+}

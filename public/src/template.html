@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <title>Foodie</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page__header" id="page__header">
+        <div class="page__header__wrapper">
+          <div class="images-collection">
+            <figure
+              class="images-collection__figure bg-cover active"
+              id="img-breakfast"
+            >
+              <img src="./images/bg-breakfast.jpg" alt="Breakfast table" />
+            </figure>
+            <figure class="images-collection__figure bg-cover" id="img-lunch">
+              <img src="./images/bg-lunch.jpg" alt="Lunch table" />
+            </figure>
+            <figure class="images-collection__figure bg-cover" id="img-dinner">
+              <img src="./images/bg-dinner.jpg" alt="Dinner table" />
+            </figure>
+          </div>
+          <!-- images-collection -->
+          <div class="menu-tabs">
+            <h1 class="brand">
+              <a href="#" class="logo"
+                ><img src="./images/logo.jpg" alt="Foodie logo"
+              /></a>
+            </h1>
+            <!-- brand -->
+
+            <div class="menu-tabs__items">
+              <div class="row">
+                <div class="col">
+                  <figure class="card active" data-img="img-breakfast">
+                    <div class="card__img">
+                      <img src="./images/waffles.jpg" alt="Waffles, Foodie" />
+                    </div>
+                    <!-- card__img -->
+                    <figcaption class="card__caption">
+                      <h3>Breakfast</h3>
+                    </figcaption>
+                    <a
+                      href="#tab-breakfast"
+                      class="masked-ref"
+                      data-tab="tab-breakfast"
+                    ></a>
+                  </figure>
+                  <!-- card -->
+                </div>
+                <!-- col -->
+                <div class="col">
+                  <figure class="card" data-img="img-lunch">
+                    <div class="card__img">
+                      <img src="./images/pizza.jpg" alt="Pizza, Foodie" />
+                    </div>
+                    <!-- card__img -->
+                    <figcaption class="card__caption">
+                      <h3>Lunch</h3>
+                    </figcaption>
+                    <a
+                      href="#tab-lunch"
+                      class="masked-ref"
+                      data-tab="tab-lunch"
+                    ></a>
+                  </figure>
+                  <!-- card -->
+                </div>
+                <!-- col -->
+                <div class="col">
+                  <figure class="card" data-img="img-dinner">
+                    <div class="card__img">
+                      <img
+                        src="./images/meatballs.jpg"
+                        alt="Meatballs, Foodie"
+                      />
+                    </div>
+                    <!-- card__img -->
+                    <figcaption class="card__caption">
+                      <h3>Dinner</h3>
+                    </figcaption>
+                    <a
+                      href="#tab-dinner"
+                      class="masked-ref"
+                      data-tab="tab-dinner"
+                    ></a>
+                  </figure>
+                  <!-- card -->
+                </div>
+                <!-- col -->
+              </div>
+              <!-- row -->
+            </div>
+            <!-- menu-tabs__items -->
+          </div>
+          <!-- menu-tabs -->
+        </div>
+        <!-- page-header__wrapper -->
+      </header>
+
+      <section class="menu-tabs__options">
+        <div
+          id="tab-breakfast"
+          class="menu-option menu-option--breakfast active"
+        >
+          <div class="container">
+            <div class="menu-list">
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/waffles.jpg"
+                    alt="Waffles served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Waffles</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/pancakes.jpg"
+                    alt="Pancakes served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Pancakes</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/breakfast-combo.jpg"
+                    alt="Combo breakfast served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Combo breakfast offer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 650.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/oatmeal.jpg"
+                    alt="Oatmeal served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Oatmeal</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/toast.jpg"
+                    alt="Egg toast served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Egg toast</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+            </div>
+            <!-- menu-list -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- breakfast -->
+        <div id="tab-lunch" class="menu-option menu-option--lunch">
+          <div class="container">
+            <div class="menu-list">
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/pizza-alt.jpg"
+                    alt="Pizza served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Pizza</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/burger.jpg"
+                    alt="Chicken burger served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Chicken burger</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/lunch-combo.jpg"
+                    alt="Combo lunch served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Combo lunch offer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 650.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/carbonara.jpg"
+                    alt="Pasta Carbonara served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Pasta Carbonara</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/meat-fries.jpg"
+                    alt="Meat and fries served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Steak and fries</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+            </div>
+            <!-- menu-list -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- lunch -->
+        <div id="tab-dinner" class="menu-option menu-option--dinner">
+          <div class="container">
+            <div class="menu-list">
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/shrimp-salad.jpg"
+                    alt="Shrimp salad served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Shrimp Salad</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 450.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/grilled-fish.jpg"
+                    alt="Grilled fish served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Grilled fish</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 450.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/veg-salad.jpg"
+                    alt="Veg salad served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Veg Salad</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img src="./images/pasta.jpg" alt="Pasta served at Foodie" />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Pasta with olives</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 350.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+              <div class="card">
+                <figure class="card__img">
+                  <img
+                    src="./images/meatballs.jpg"
+                    alt="Meatballs served at Foodie"
+                  />
+                </figure>
+
+                <div class="card__content">
+                  <h3>Meatballs</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima inventore cupiditate est dolores laboriosam labore
+                    illum quia! Error.
+                  </p>
+                  <ul class="card__list">
+                    <li class="with-icon with-icon--timer">15mins</li>
+                    <li class="with-icon with-icon--servings">2 serves</li>
+                  </ul>
+                </div>
+                <!-- card__content -->
+                <div class="card__price">
+                  <h4 class="h5">Price</h4>
+                  <span>Rs 450.00</span>
+                </div>
+                <!-- card__price -->
+              </div>
+              <!-- .card -->
+            </div>
+            <!-- menu-list -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- dinner-->
+      </section>
+      <a href="#page__header" class="nav-to-top"></a>
+    </div>
+  </body>
+</html>

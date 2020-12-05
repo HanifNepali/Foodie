@@ -1,0 +1,86 @@
+.menu-tabs__options {
+  padding: 4rem 2rem;
+  background-color: $white-100;
+  @media (min-width: 992px) {
+    padding: 6rem 4rem;
+  }
+
+  .menu-option {
+    display: none;
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    &::before {
+      @media (min-width: 992px) {
+        top: 25%;
+        right: -4rem;
+        width: 325px;
+        height: 545px;
+      }
+    }
+    &::after {
+      @media (min-width: 992px) {
+        bottom: -6rem;
+        left: -4rem;
+        width: 400px;
+        height: 500px;
+      }
+    }
+    &.active {
+      display: block;
+    }
+    &--breakfast {
+      &::before {
+        @media (min-width: 992px) {
+          background: url("../images/decor-breakfast-1.png") no-repeat;
+        }
+      }
+      &::after {
+        @media (min-width: 992px) {
+          background: url("../images/decor-breakfast-2.png") no-repeat;
+        }
+      }
+    }
+    &--lunch {
+      &::before {
+        @media (min-width: 992px) {
+          background: url("../images/decor-lunch-1.png") no-repeat;
+        }
+      }
+      &::after {
+        @media (min-width: 992px) {
+          background: url("../images/decor-lunch-2.png") no-repeat;
+        }
+      }
+    }
+    &--dinner {
+      &::before {
+        @media (min-width: 992px) {
+          background: url("../images/decor-dinner-1.png") no-repeat;
+        }
+      }
+      &::after {
+        @media (min-width: 992px) {
+          background: url("../images/decor-dinner-2.png") no-repeat;
+        }
+      }
+    }
+  }
+
+  .menu-list {
+    padding: 3rem;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 992px) {
+      padding: 4rem;
+    }
+  }
+}

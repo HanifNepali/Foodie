@@ -1,0 +1,24 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix public && npm run build --prefix public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanifNepali/Foodie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanifNepali/Foodie/issues"
+  },
+  "homepage": "https://github.com/HanifNepali/Foodie#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

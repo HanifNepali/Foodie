@@ -1,0 +1,6 @@
+.page__header {
+  &__wrapper {
+    @extend .gutter-md-x;
+    position: relative;
+  }
+}
